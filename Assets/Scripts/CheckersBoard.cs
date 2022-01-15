@@ -16,7 +16,7 @@ public class CheckersBoard : MonoBehaviour {
 
     private Vector2 mouseOver;
     private Vector2 startDrag;
-    private Vector3 endDrag;
+    private Vector2 endDrag;
 
     private void Start()
     {
@@ -31,6 +31,9 @@ public class CheckersBoard : MonoBehaviour {
         {
             int x = (int)mouseOver.x;
             int y = (int)mouseOver.y;
+
+            if (selectedPiece != null)
+                UpdatePieceDrag(selectedPiece);
 
             if (Input.GetMouseButtonDown(0))
                 SelectPiece(x, y);
@@ -62,6 +65,23 @@ public class CheckersBoard : MonoBehaviour {
         }
     }
 
+    private void UpdatePieceDrag(Piece p)
+    {
+        if (!Camera.main)
+        {
+            Debug.Log("Unable to find main camera");
+            return;
+        }
+
+        RaycastHit hit;
+        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 25.0f, LayerMask.GetMask("Board")))
+        {
+            p.transform.position = hit.point + Vector3.up;
+
+
+        }
+    }
+
     private void SelectPiece(int x, int y)
     {
         // Out of bounds
@@ -85,7 +105,30 @@ public class CheckersBoard : MonoBehaviour {
         selectedPiece = pieces[x1, y1];
 
         //Check if we are out of bounds
-        MovePiece(selectedPiece, x2, y2);
+        if (x2 < 0 || x2 >= pieces.Length || y2 < 0 || y2 >= pieces.Length)
+        {
+            if (selectedPiece != null)
+                MovePiece(selectedPiece, x1, y1);
+
+            startDrag = Vector2.zero;
+            selectedPiece = null;
+            return;
+        }
+
+        if(selectedPiece != null)
+        {
+            // If it has not moved
+            if(endDrag == startDrag)
+            {
+                MovePiece(selectedPiece, x1, y1);
+                startDrag = Vector2.zero;
+                selectedPiece = null;
+                return;
+            }
+            // Check if its a valid move
+
+        }
+        //MovePiece(selectedPiece, x2, y2);
     }
 
     private void GenerateBoard()
