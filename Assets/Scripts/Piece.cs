@@ -13,7 +13,7 @@ public class Piece : MonoBehaviour {
         if(board[x2, y2] != null)
             return false;
         int deltaMove = Mathf.Abs(x1 - x2);
-        int deltaMoveY = y1 - y2;
+        int deltaMoveY = y2 - y1;
         if (isWhite || isKing)
         {
 
