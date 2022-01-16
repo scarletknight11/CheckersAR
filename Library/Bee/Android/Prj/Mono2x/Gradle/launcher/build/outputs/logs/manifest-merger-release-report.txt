@@ -123,7 +123,7 @@ ADDED from [:unityLibrary] C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android
 activity#com.unity3d.player.UnityPlayerActivity
 ADDED from [:unityLibrary] C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:36:9-56:20
 	android:screenOrientation
-		ADDED from [:unityLibrary] C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:42:13-51
+		ADDED from [:unityLibrary] C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:42:13-57
 	android:launchMode
 		ADDED from [:unityLibrary] C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:40:13-44
 	android:hardwareAccelerated

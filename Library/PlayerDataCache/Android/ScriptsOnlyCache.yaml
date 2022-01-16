@@ -1,8 +1,8 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - DisableDebugPlaneOnDevice
-    - SetTargetFramerate
+    - CheckersBoard
+    - Piece
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
@@ -13,27 +13,12 @@ ScriptsOnlyBuild:
     - UnityEditor.XR.ARCore.ARCoreSettings
     Unity.XR.ARCore.dll:
     - UnityEngine.XR.ARCore.ARCoreLoader
-    Unity.XR.ARFoundation.dll:
-    - UnityEngine.XR.ARFoundation.ARCameraBackground
-    - UnityEngine.XR.ARFoundation.ARCameraManager
-    - UnityEngine.XR.ARFoundation.ARInputManager
-    - UnityEngine.XR.ARFoundation.ARPlane
-    - UnityEngine.XR.ARFoundation.ARPlaneManager
-    - UnityEngine.XR.ARFoundation.ARPlaneMeshVisualizer
-    - UnityEngine.XR.ARFoundation.ARRaycastManager
-    - UnityEngine.XR.ARFoundation.ARSession
-    - UnityEngine.XR.ARFoundation.ARSessionOrigin
+    Unity.XR.ARKit.Editor.dll:
+    - UnityEditor.XR.ARKit.ARKitSettings
     Unity.XR.Interaction.Toolkit.Editor.dll:
     - UnityEditor.XR.Interaction.Toolkit.XRInteractionEditorSettings
     Unity.XR.Interaction.Toolkit.dll:
-    - UnityEngine.XR.Interaction.Toolkit.AR.ARGestureInteractor
-    - UnityEngine.XR.Interaction.Toolkit.AR.ARPlacementInteractable
-    - UnityEngine.XR.Interaction.Toolkit.AR.ARRotationInteractable
-    - UnityEngine.XR.Interaction.Toolkit.AR.ARScaleInteractable
-    - UnityEngine.XR.Interaction.Toolkit.AR.ARSelectionInteractable
-    - UnityEngine.XR.Interaction.Toolkit.AR.ARTranslationInteractable
     - UnityEngine.XR.Interaction.Toolkit.InteractionLayerSettings
-    - UnityEngine.XR.Interaction.Toolkit.XRInteractionManager
     Unity.XR.Management.Editor.dll:
     - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
     Unity.XR.Management.dll:
@@ -43,10 +28,8 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-    UnityEngine.SpatialTracking.dll:
-    - UnityEngine.SpatialTracking.TrackedPoseDriver
   sceneClasses:
-    Assets/Scenes/ARInteraction.unity:
+    Assets/Scenes/SampleScene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -65,6 +48,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 65
@@ -78,70 +63,30 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1568}
+      Script: {instanceID: 4458}
     - Class: 114
-      Script: {instanceID: 1704}
+      Script: {instanceID: 6104}
     - Class: 114
-      Script: {instanceID: 3652}
-    - Class: 114
-      Script: {instanceID: 3852}
-    - Class: 114
-      Script: {instanceID: 4288}
-    - Class: 114
-      Script: {instanceID: 4366}
-    - Class: 114
-      Script: {instanceID: 4442}
-    - Class: 114
-      Script: {instanceID: 4464}
-    - Class: 114
-      Script: {instanceID: 4660}
-    - Class: 114
-      Script: {instanceID: 4852}
-    - Class: 114
-      Script: {instanceID: 7072}
-    - Class: 114
-      Script: {instanceID: 7734}
-    - Class: 114
-      Script: {instanceID: 8292}
-    - Class: 114
-      Script: {instanceID: 8396}
-    - Class: 114
-      Script: {instanceID: 8638}
-    - Class: 114
-      Script: {instanceID: 9084}
-    - Class: 114
-      Script: {instanceID: 9640}
-    - Class: 114
-      Script: {instanceID: 9824}
-    - Class: 114
-      Script: {instanceID: 25528}
-    - Class: 114
-      Script: {instanceID: 25534}
+      Script: {instanceID: 8418}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 120
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
-    - Class: 258
-      Script: {instanceID: 0}
-    - Class: 850595691
-      Script: {instanceID: 0}
   scriptHashData:
-  - hash:
-      serializedVersion: 2
-      Hash: c1d728126ff1918728036c59106d32b2
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: RawImage
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UIElements
     className: PanelRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: a1f11b786cc0a0131441646ad4b674bf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlaceObjectOnPlane
   - hash:
       serializedVersion: 2
       Hash: e8733e39efa851172df1c9eaef062265
@@ -312,6 +257,12 @@ ScriptsOnlyBuild:
     className: TeleportationAnchor
   - hash:
       serializedVersion: 2
+      Hash: c1d728126ff1918728036c59106d32b2
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: RawImage
+  - hash:
+      serializedVersion: 2
       Hash: 9b6303c7164a38e06044ec2036c18b6b
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
@@ -448,6 +399,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: AREnvironmentProbeManager
+  - hash:
+      serializedVersion: 2
+      Hash: 133dffae4a8602b10169a1df36a04993
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SwitchPlacementPrefab
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -652,6 +609,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem
     className: InputActionAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FadePlaneOnBoundaryChange
   - hash:
       serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
@@ -894,6 +857,12 @@ ScriptsOnlyBuild:
     className: ARTrackedImageManager
   - hash:
       serializedVersion: 2
+      Hash: 2fc878cec966e66d50ed3edfcb58bf01
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SetTargetFramerate
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -978,7 +947,7 @@ ScriptsOnlyBuild:
     className: Toggle
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: f3408f7c2c272e40ab304cc43ed5c51f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Piece
@@ -1138,6 +1107,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseUpAsButtonMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 76b7e183d9d3382d8f2b9ae1c01d0aa6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ARFeatheredPlaneMeshVisualizer
   - hash:
       serializedVersion: 2
       Hash: 0247b3226bce1611f95bef667f3a55b3
@@ -1320,7 +1295,7 @@ ScriptsOnlyBuild:
     className: ARTranslationInteractable
   - hash:
       serializedVersion: 2
-      Hash: 5273136d60f58eb84ffc17b3fe4e7919
+      Hash: bc5863579f02c00e2f536623c1bb9a6a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CheckersBoard
@@ -1536,6 +1511,12 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 3e1a134f2c140ce9ac0fff756c2ec2b1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DisableDebugPlaneOnDevice
+  - hash:
+      serializedVersion: 2
       Hash: d39905ff8fda75afed4d688761c322e1
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
@@ -1600,25 +1581,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 2fc878cec966e66d50ed3edfcb58bf01
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SetTargetFramerate
-  - hash:
-      serializedVersion: 2
-      Hash: 3e1a134f2c140ce9ac0fff756c2ec2b1
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DisableDebugPlaneOnDevice
-  - hash:
-      serializedVersion: 2
-      Hash: 133dffae4a8602b10169a1df36a04993
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SwitchPlacementPrefab
   platform: 13
   scenePathNames:
-  - Assets/Scenes/ARInteraction.unity
+  - Assets/Scenes/SampleScene.unity
   playerPath: C:/Users/pauld/Desktop/CheckersARapp.apk

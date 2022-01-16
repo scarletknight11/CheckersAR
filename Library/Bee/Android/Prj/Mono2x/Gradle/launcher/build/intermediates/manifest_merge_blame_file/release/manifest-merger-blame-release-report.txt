@@ -95,8 +95,8 @@
 54-->[:unityLibrary] C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:40:13-44
 55            android:resizeableActivity="false"
 55-->[:unityLibrary] C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:41:13-47
-56            android:screenOrientation="fullSensor"
-56-->[:unityLibrary] C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:42:13-51
+56            android:screenOrientation="reverseLandscape"
+56-->[:unityLibrary] C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:42:13-57
 57            android:theme="@style/UnityThemeSelector" >
 57-->[:unityLibrary] C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:43:13-54
 58            <intent-filter>

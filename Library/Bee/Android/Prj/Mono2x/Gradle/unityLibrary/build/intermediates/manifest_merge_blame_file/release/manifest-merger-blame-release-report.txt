@@ -63,15 +63,15 @@
 37            android:name="com.unity3d.player.UnityPlayerActivity"
 37-->C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:15-68
 38            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
-38-->C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:182-363
+38-->C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:188-369
 39            android:hardwareAccelerated="false"
-39-->C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:399-434
+39-->C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:405-440
 40            android:launchMode="singleTask"
-40-->C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:150-181
+40-->C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:156-187
 41            android:resizeableActivity="false"
-41-->C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:364-398
-42            android:screenOrientation="fullSensor"
-42-->C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-149
+41-->C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:370-404
+42            android:screenOrientation="reverseLandscape"
+42-->C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-155
 43            android:theme="@style/UnityThemeSelector" >
 43-->C:\Users\pauld\Desktop\CheckersAR\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:69-110
 44            <intent-filter>
