@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 416138821428322532}
+  - component: {fileID: 746752181}
+  - component: {fileID: 1392871146689460193}
   m_Layer: 0
   m_Name: CheckersBoard
   m_TagString: Untagged
@@ -33,6 +35,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &746752181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416138821428322533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 290e8f6c16da365458c5b71263a6193d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whitePiecePrefab: {fileID: 4236027752062622438, guid: 7eb82adca2fe06f42893d8529d43f617, type: 3}
+  blackPiecePrefab: {fileID: 1671715088083370682, guid: 216253734d2ea504f884b09fbd1f6dbe, type: 3}
+  isWhite: 0
+--- !u!114 &1392871146689460193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416138821428322533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5104e4fc2a109f4bb6303befa7c390d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6951053743696553089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -124,13 +153,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3044143088502607217}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 290e8f6c16da365458c5b71263a6193d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   whitePiecePrefab: {fileID: 4236027752062622438, guid: 7eb82adca2fe06f42893d8529d43f617, type: 3}
   blackPiecePrefab: {fileID: 1671715088083370682, guid: 216253734d2ea504f884b09fbd1f6dbe, type: 3}
+  isWhite: 0
 --- !u!1001 &9133792447641178187
 PrefabInstance:
   m_ObjectHideFlags: 0

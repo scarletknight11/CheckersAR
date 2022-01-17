@@ -356,5 +356,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: CheckersBoard
       objectReference: {fileID: 0}
+    - target: {fileID: 3548278446721805479, guid: 59aaaf9f2fdd3b9438f062fbf52d7f73, type: 3}
+      propertyPath: isWhite
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59aaaf9f2fdd3b9438f062fbf52d7f73, type: 3}
