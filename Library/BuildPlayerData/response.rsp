@@ -16,6 +16,8 @@
 -a="C:\Users\pauld\Desktop\CheckersAR\Library\PlayerScriptAssemblies\Unity.XR.ARSubsystems.dll"
 -a="C:\Users\pauld\Desktop\CheckersAR\Library\PlayerScriptAssemblies\Unity.VisualScripting.State.dll"
 -a="C:\Users\pauld\Desktop\CheckersAR\Library\PlayerScriptAssemblies\Unity.XR.ARFoundation.dll"
+-a="C:\Users\pauld\Desktop\CheckersAR\Library\PlayerScriptAssemblies\LeanTouch.dll"
+-a="C:\Users\pauld\Desktop\CheckersAR\Library\PlayerScriptAssemblies\LeanCommon.dll"
 -a="C:\Users\pauld\Desktop\CheckersAR\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\AOT\Newtonsoft.Json.dll"
 -a="C:\Users\pauld\Desktop\CheckersAR\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Portable\Newtonsoft.Json.dll"
 -a="C:\Users\pauld\Desktop\CheckersAR\Library\PackageCache\com.unity.visualscripting@1.7.6\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll"

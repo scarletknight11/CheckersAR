@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 416138821428322532}
   - component: {fileID: 746752181}
-  - component: {fileID: 1392871146689460193}
+  - component: {fileID: 283731287}
+  - component: {fileID: 283731286}
   m_Layer: 0
   m_Name: CheckersBoard
   m_TagString: Untagged
@@ -50,7 +51,30 @@ MonoBehaviour:
   whitePiecePrefab: {fileID: 4236027752062622438, guid: 7eb82adca2fe06f42893d8529d43f617, type: 3}
   blackPiecePrefab: {fileID: 1671715088083370682, guid: 216253734d2ea504f884b09fbd1f6dbe, type: 3}
   isWhite: 0
---- !u!114 &1392871146689460193
+--- !u!114 &283731287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416138821428322533}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eda371e5375f454490a86f21559ee38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Use:
+    Filter: 0
+    IgnoreStartedOverGui: 1
+    RequiredFingerCount: 0
+    RequiredMouseButtons: 0
+    RequiredSelectable: {fileID: 0}
+  _camera: {fileID: 0}
+  sensitivity: 1
+  damping: -1
+  inertia: 0
+  remainingTranslation: {x: 0, y: 0, z: 0}
+--- !u!114 &283731286
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -59,9 +83,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 416138821428322533}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5104e4fc2a109f4bb6303befa7c390d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c73c1ab94e28d244827af556dca1ed2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Use:
+    Filter: 0
+    IgnoreStartedOverGui: 1
+    RequiredFingerCount: 0
+    RequiredMouseButtons: 0
+    RequiredSelectable: {fileID: 0}
+  _camera: {fileID: 0}
+  relative: 0
+  sensitivity: 1
+  damping: -1
+  remainingScale: {x: 0, y: 0, z: 0}
 --- !u!1001 &6951053743696553089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -146,21 +181,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.08440306, y: 0.08440306, z: 0.001}
   m_Center: {x: 0.0000000037252903, y: 0, z: -0.0004999997}
---- !u!114 &3548278446721805479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3044143088502607217}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 290e8f6c16da365458c5b71263a6193d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  whitePiecePrefab: {fileID: 4236027752062622438, guid: 7eb82adca2fe06f42893d8529d43f617, type: 3}
-  blackPiecePrefab: {fileID: 1671715088083370682, guid: 216253734d2ea504f884b09fbd1f6dbe, type: 3}
-  isWhite: 0
 --- !u!1001 &9133792447641178187
 PrefabInstance:
   m_ObjectHideFlags: 0

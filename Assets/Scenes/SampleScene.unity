@@ -301,6 +301,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1863588640 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 416138821428322533, guid: 59aaaf9f2fdd3b9438f062fbf52d7f73, type: 3}
+  m_PrefabInstance: {fileID: 416138821654917689}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1863588641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863588640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49eebbfcc03829f4ebed61c2617da0fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationElasticConfigurationObject: {fileID: 0}
+  rotationElasticConfigurationObject: {fileID: 0}
+  scaleElasticConfigurationObject: {fileID: 0}
+  translationElasticExtent:
+    StretchBounds:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+    UseBounds: 0
+    SnapPoints: []
+    RepeatSnapPoints: 0
+    SnapRadius: 0
+  rotationElasticExtent:
+    SnapPoints: []
+    RepeatSnapPoints: 0
+    SnapRadius: 0
+  scaleElasticExtent:
+    StretchBounds:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+    UseBounds: 0
+    SnapPoints: []
+    RepeatSnapPoints: 0
+    SnapRadius: 0
+  elasticTypes: 0
 --- !u!1001 &416138821654917689
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -308,6 +349,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 268782691, guid: 59aaaf9f2fdd3b9438f062fbf52d7f73, type: 3}
+      propertyPath: elasticsManager
+      value: 
+      objectReference: {fileID: 1863588641}
     - target: {fileID: 416138821428322532, guid: 59aaaf9f2fdd3b9438f062fbf52d7f73, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -355,6 +400,10 @@ PrefabInstance:
     - target: {fileID: 416138821428322533, guid: 59aaaf9f2fdd3b9438f062fbf52d7f73, type: 3}
       propertyPath: m_Name
       value: CheckersBoard
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548278446721805478, guid: 59aaaf9f2fdd3b9438f062fbf52d7f73, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3548278446721805479, guid: 59aaaf9f2fdd3b9438f062fbf52d7f73, type: 3}
       propertyPath: isWhite
